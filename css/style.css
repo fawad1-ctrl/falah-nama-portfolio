@@ -1,0 +1,79 @@
+/* =============================
+   Falah Nama — Global Styles
+   ============================= */
+
+* { font-family: 'Poppins', sans-serif; box-sizing: border-box; }
+.urdu { font-family: 'Noto Nastaliq Urdu', serif; }
+
+/* Gradient utilities */
+.gradient-bg { background: linear-gradient(135deg, #059669 0%, #0d9488 50%, #0891b2 100%); }
+.gradient-text {
+    background: linear-gradient(135deg, #059669, #0d9488);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+/* Card hover */
+.card-hover { transition: transform 0.3s ease, box-shadow 0.3s ease; }
+.card-hover:hover { transform: translateY(-8px); box-shadow: 0 20px 40px rgba(0,0,0,0.1); }
+
+/* Animations */
+.floating { animation: float 3s ease-in-out infinite; }
+@keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+}
+
+.pulse-glow { animation: pulse-glow 2s ease-in-out infinite; }
+@keyframes pulse-glow {
+    0%, 100% { box-shadow: 0 0 20px rgba(5, 150, 105, 0.3); }
+    50% { box-shadow: 0 0 40px rgba(5, 150, 105, 0.6); }
+}
+
+@keyframes fadeInUp {
+    from { opacity: 0; transform: translateY(20px); }
+    to   { opacity: 1; transform: translateY(0); }
+}
+.fade-in-up { animation: fadeInUp 0.5s ease forwards; }
+
+/* Hero subtle background pattern */
+.hero-pattern {
+    background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23059669' fill-opacity='0.05'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+}
+
+/* Counter numbers */
+.counter { font-variant-numeric: tabular-nums; }
+
+/* Modal */
+.modal { display: none; }
+.modal.active { display: flex; }
+
+/* Service icon box */
+.service-icon { width: 80px; height: 80px; }
+
+/* Demo card */
+.demo-card { background: linear-gradient(145deg, #ffffff, #f0fdf4); }
+
+/* WhatsApp float button */
+.whatsapp-float { position: fixed; bottom: 20px; right: 20px; z-index: 1000; }
+
+/* Video embed */
+.video-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; }
+.video-container iframe { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
+
+/* Smooth scroll */
+html { scroll-behavior: smooth; }
+
+/* Responsive images */
+img { max-width: 100%; }
+
+/* ====== Pricing card "Most Popular" badge positioning fix ====== */
+.pricing-popular { position: relative; }
+.popular-badge {
+    position: absolute;
+    top: -14px;
+    left: 50%;
+    transform: translateX(-50%);
+    white-space: nowrap;
+}

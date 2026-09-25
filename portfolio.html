@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio – Falah Nama</title>
+    <meta name="description" content="See real projects we've built for Pakistani businesses across every industry.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Noto+Nastaliq+Urdu:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="bg-gray-50">
+
+<div id="nav-root"></div>
+
+<!-- Page Header -->
+<section class="pt-28 pb-12 gradient-bg text-white text-center">
+    <h1 class="text-4xl md:text-5xl font-bold mb-3">Our Portfolio</h1>
+    <p class="text-xl urdu text-emerald-100 mb-2">ہمارا پورٹ فولیو</p>
+    <p class="text-emerald-100 max-w-xl mx-auto">Real websites we've built for businesses across Pakistan</p>
+</section>
+
+<!-- Filter Tabs -->
+<section class="py-8 bg-white sticky top-16 z-40 shadow-sm">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex flex-wrap justify-center gap-3" id="filterBtns">
+            <button onclick="filterPortfolio('all')"        class="filter-btn active px-5 py-2 rounded-full text-sm font-semibold transition">All</button>
+            <button onclick="filterPortfolio('ecommerce')"  class="filter-btn px-5 py-2 rounded-full text-sm font-semibold transition">E-Commerce</button>
+            <button onclick="filterPortfolio('restaurant')" class="filter-btn px-5 py-2 rounded-full text-sm font-semibold transition">Restaurant</button>
+            <button onclick="filterPortfolio('realestate')" class="filter-btn px-5 py-2 rounded-full text-sm font-semibold transition">Real Estate</button>
+            <button onclick="filterPortfolio('education')"  class="filter-btn px-5 py-2 rounded-full text-sm font-semibold transition">Education</button>
+            <button onclick="filterPortfolio('healthcare')" class="filter-btn px-5 py-2 rounded-full text-sm font-semibold transition">Healthcare</button>
+            <button onclick="filterPortfolio('corporate')"  class="filter-btn px-5 py-2 rounded-full text-sm font-semibold transition">Corporate</button>
+        </div>
+    </div>
+</section>
+
+<!-- Portfolio Grid -->
+<section class="py-16">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8" id="portfolioGrid">
+
+            <!-- ── IMPORTANT: Replace dummy images & links below with your REAL projects ── -->
+
+            <div class="portfolio-item" data-cat="ecommerce">
+                <div class="bg-white rounded-2xl overflow-hidden shadow-lg card-hover group">
+                    <div class="relative overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=600&h=380&fit=crop" alt="Fashion Store" class="w-full h-56 object-cover group-hover:scale-105 transition-transform duration-500">
+                        <div class="absolute top-4 left-4"><span class="bg-emerald-500 text-white px-3 py-1 rounded-full text-xs font-semibold">E-Commerce</span></div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="font-bold text-gray-900 text-lg mb-1">Fashion Hub Lahore</h3>
+                        <p class="text-gray-500 text-sm mb-4">Online clothing store with 500+ products, JazzCash payments & WhatsApp orders.</p>
+                        <a href="https://rangzaib-demo.mywebx.pk/" class="text-emerald-600 font-semibold text-sm inline-flex items-center gap-2 hover:gap-3 transition-all">View Project <i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="portfolio-item" data-cat="restaurant">
+                <div class="bg-white rounded-2xl overflow-hidden shadow-lg card-hover group">
+                    <div class="relative overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=600&h=380&fit=crop" alt="Restaurant" class="w-full h-56 object-cover group-hover:scale-105 transition-transform duration-500">
+                        <div class="absolute top-4 left-4"><span class="bg-orange-500 text-white px-3 py-1 rounded-full text-xs font-semibold">Restaurant</span></div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="font-bold text-gray-900 text-lg mb-1">Fast Food Lahore</h3>
+                        <p class="text-gray-500 text-sm mb-4">Digital menu, table booking system, WhatsApp ordering & Google Maps integration.</p>
+                        <a href="https://alpha-food-demo.mywebx.pk/" class="text-emerald-600 font-semibold text-sm inline-flex items-center gap-2 hover:gap-3 transition-all">View Project <i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="portfolio-item" data-cat="realestate">
+                <div class="bg-white rounded-2xl overflow-hidden shadow-lg card-hover group">
+                    <div class="relative overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=600&h=380&fit=crop" alt="Real Estate" class="w-full h-56 object-cover group-hover:scale-105 transition-transform duration-500">
+                        <div class="absolute top-4 left-4"><span class="bg-blue-500 text-white px-3 py-1 rounded-full text-xs font-semibold">Real Estate</span></div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="font-bold text-gray-900 text-lg mb-1">DHA Properties Lahore</h3>
+                        <p class="text-gray-500 text-sm mb-4">Property portal with filters, photo galleries, map view & lead generation forms.</p>
+                        <a href="https://demo03.houzez.co/" class="text-emerald-600 font-semibold text-sm inline-flex items-center gap-2 hover:gap-3 transition-all">View Project <i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="portfolio-item" data-cat="healthcare">
+                <div class="bg-white rounded-2xl overflow-hidden shadow-lg card-hover group">
+                    <div class="relative overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?w=600&h=380&fit=crop" alt="Healthcare" class="w-full h-56 object-cover group-hover:scale-105 transition-transform duration-500">
+                        <div class="absolute top-4 left-4"><span class="bg-red-500 text-white px-3 py-1 rounded-full text-xs font-semibold">Healthcare</span></div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="font-bold text-gray-900 text-lg mb-1">Shifa Clinic Rawalpindi</h3>
+                        <p class="text-gray-500 text-sm mb-4">Doctor appointment booking, service listings, patient WhatsApp reminders & Google Reviews.</p>
+                        <a href="https://vigour.axiomthemes.com/" class="text-emerald-600 font-semibold text-sm inline-flex items-center gap-2 hover:gap-3 transition-all">View Project <i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+            </div>
+
+             <!-- Demo 5: shoes store  -->
+           <div class="portfolio-item" data-cat="ecommerce">
+    <div class="bg-white rounded-2xl overflow-hidden shadow-lg card-hover group">
+        <div class="relative overflow-hidden">
+            <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=600&h=380&fit=crop"
+                 alt="Shoe Store"
+                 class="w-full h-56 object-cover group-hover:scale-105 transition-transform duration-500">
+
+            <div class="absolute top-4 left-4">
+                <span class="bg-emerald-500 text-white px-3 py-1 rounded-full text-xs font-semibold">
+                    E-Commerce
+                </span>
+            </div>
+        </div>
+
+        <div class="p-6">
+            <h3 class="font-bold text-gray-900 text-lg mb-1">
+                Lahore Shoe House
+            </h3>
+
+            <p class="text-gray-500 text-sm mb-4">
+                Online footwear store with size filters, product variations, WhatsApp orders & COD.
+            </p>
+
+            <a href="https://kickstreet-demo.mywebx.pk/"
+               target="_blank"
+               class="text-emerald-600 font-semibold text-sm inline-flex items-center gap-2 hover:gap-3 transition-all">
+                View Project <i class="fas fa-external-link-alt"></i>
+            </a>
+        </div>
+    </div>
+</div>
+
+                   <!--demo 6: Bags -->
+<div class="portfolio-item" data-cat="ecommerce">
+    <div class="bg-white rounded-2xl overflow-hidden shadow-lg card-hover group">
+        <div class="relative overflow-hidden">
+            <img src="https://images.unsplash.com/photo-1584917865442-de89df76afd3?w=600&h=380&fit=crop"
+                 alt="Bag Store"
+                 class="w-full h-56 object-cover group-hover:scale-105 transition-transform duration-500">
+
+            <div class="absolute top-4 left-4">
+                <span class="bg-emerald-500 text-white px-3 py-1 rounded-full text-xs font-semibold">
+                    E-Commerce
+                </span>
+            </div>
+        </div>
+
+        <div class="p-6">
+            <h3 class="font-bold text-gray-900 text-lg mb-1">
+                Lahore Bags Collection
+            </h3>
+
+            <p class="text-gray-500 text-sm mb-4">
+                Fashion bag store with categories, product gallery, size options & WhatsApp ordering.
+            </p>
+
+            <a href="https://alpha-bags-demo.mywebx.pk/" target="_blank"
+               class="text-emerald-600 font-semibold text-sm inline-flex items-center gap-2 hover:gap-3 transition-all">
+                View Project <i class="fas fa-external-link-alt"></i>
+            </a>
+        </div>
+    </div>
+</div>
+
+<!--demo 7: beuty products-->
+<div class="portfolio-item" data-cat="ecommerce">
+    <div class="bg-white rounded-2xl overflow-hidden shadow-lg card-hover group">
+        <div class="relative overflow-hidden">
+            <img src="https://images.unsplash.com/photo-1596462502278-27bfdc403348?w=600&h=380&fit=crop"
+                 alt="Beauty Products"
+                 class="w-full h-56 object-cover group-hover:scale-105 transition-transform duration-500">
+
+            <div class="absolute top-4 left-4">
+                <span class="bg-pink-500 text-white px-3 py-1 rounded-full text-xs font-semibold">
+                    E-Commerce
+                </span>
+            </div>
+        </div>
+
+        <div class="p-6">
+            <h3 class="font-bold text-gray-900 text-lg mb-1">
+                Glow Beauty Lahore
+            </h3>
+
+            <p class="text-gray-500 text-sm mb-4">
+                Beauty and skincare store with product categories, reviews, offers & online ordering.
+            </p>
+
+            <a href="https://glowify-demo.mywebx.pk/" target="_blank"
+               class="text-emerald-600 font-semibold text-sm inline-flex items-center gap-2 hover:gap-3 transition-all">
+                View Project <i class="fas fa-external-link-alt"></i>
+            </a>
+        </div>
+    </div>
+</div>
+
+           <!--Demo 8 : Furniture -->
+<div class="portfolio-item" data-cat="ecommerce">
+    <div class="bg-white rounded-2xl overflow-hidden shadow-lg card-hover group">
+        <div class="relative overflow-hidden">
+            <img src="https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=600&h=380&fit=crop"
+                 alt="Furniture Store"
+                 class="w-full h-56 object-cover group-hover:scale-105 transition-transform duration-500">
+
+            <div class="absolute top-4 left-4">
+                <span class="bg-amber-500 text-white px-3 py-1 rounded-full text-xs font-semibold">
+                    E-Commerce
+                </span>
+            </div>
+        </div>
+
+        <div class="p-6">
+            <h3 class="font-bold text-gray-900 text-lg mb-1">
+                Lahore Furniture Gallery
+            </h3>
+
+            <p class="text-gray-500 text-sm mb-4">
+                Furniture showroom website with room categories, product galleries & custom-order inquiries.
+            </p>
+
+            <a href="https://alpha-furniture-demo.mywebx.pk/" target="_blank"
+               class="text-emerald-600 font-semibold text-sm inline-flex items-center gap-2 hover:gap-3 transition-all">
+                View Project <i class="fas fa-external-link-alt"></i>
+            </a>
+        </div>
+    </div>
+</div>
+
+<!--Demo 9: watches -->
+
+<div class="portfolio-item" data-cat="ecommerce">
+    <div class="bg-white rounded-2xl overflow-hidden shadow-lg card-hover group">
+        <div class="relative overflow-hidden">
+            <img src="https://images.unsplash.com/photo-1524805444758-089113d48a6d?w=600&h=380&fit=crop"
+                 alt="Watch Store"
+                 class="w-full h-56 object-cover group-hover:scale-105 transition-transform duration-500">
+
+            <div class="absolute top-4 left-4">
+                <span class="bg-indigo-500 text-white px-3 py-1 rounded-full text-xs font-semibold">
+                    E-Commerce
+                </span>
+            </div>
+        </div>
+
+        <div class="p-6">
+            <h3 class="font-bold text-gray-900 text-lg mb-1">
+                Time Zone Lahore
+            </h3>
+
+            <p class="text-gray-500 text-sm mb-4">
+                Watch store with men's and women's collections, product details, offers & COD checkout.
+            </p>
+
+            <a href="https://alpha-jewelry-watches-demo.mywebx.pk/" target="_blank"
+               class="text-emerald-600 font-semibold text-sm inline-flex items-center gap-2 hover:gap-3 transition-all">
+                View Project <i class="fas fa-external-link-alt"></i>
+            </a>
+        </div>
+    </div>
+</div>
+
+
+
+<!--demo 10: electronics-->
+<div class="portfolio-item" data-cat="ecommerce">
+    <div class="bg-white rounded-2xl overflow-hidden shadow-lg card-hover group">
+        <div class="relative overflow-hidden">
+            <img src="https://images.unsplash.com/photo-1498049794561-7780e7231661?w=600&h=380&fit=crop"
+                 alt="Electronics Store"
+                 class="w-full h-56 object-cover group-hover:scale-105 transition-transform duration-500">
+
+            <div class="absolute top-4 left-4">
+                <span class="bg-blue-500 text-white px-3 py-1 rounded-full text-xs font-semibold">
+                    E-Commerce
+                </span>
+            </div>
+        </div>
+
+        <div class="p-6">
+            <h3 class="font-bold text-gray-900 text-lg mb-1">
+                Fawad Tech Store
+            </h3>
+
+            <p class="text-gray-500 text-sm mb-4">
+                Electronics marketplace featuring mobiles, accessories, gadgets, filters & WhatsApp orders.
+            </p>
+
+            <a href="https://conflux-demo.mywebx.pk/" target="_blank"
+               class="text-emerald-600 font-semibold text-sm inline-flex items-center gap-2 hover:gap-3 transition-all">
+                View Project <i class="fas fa-external-link-alt"></i>
+            </a>
+        </div>
+    </div>
+</div>
+
+
+
+<!--Demo 11: jewllry -->
+<div class="portfolio-item" data-cat="ecommerce">
+    <div class="bg-white rounded-2xl overflow-hidden shadow-lg card-hover group">
+        <div class="relative overflow-hidden">
+            <img src="https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?w=600&h=380&fit=crop"
+                 alt="Jewelry Store"
+                 class="w-full h-56 object-cover group-hover:scale-105 transition-transform duration-500">
+
+            <div class="absolute top-4 left-4">
+                <span class="bg-purple-500 text-white px-3 py-1 rounded-full text-xs font-semibold">
+                    E-Commerce
+                </span>
+            </div>
+        </div>
+
+        <div class="p-6">
+            <h3 class="font-bold text-gray-900 text-lg mb-1">
+                Lahore Jewelry Studio
+            </h3>
+
+            <p class="text-gray-500 text-sm mb-4">
+                Jewelry boutique with collection galleries, product details, custom orders & inquiry forms.
+            </p>
+
+            <a href="https://aurelia-demo.mywebx.pk/" target="_blank"
+               class="text-emerald-600 font-semibold text-sm inline-flex items-center gap-2 hover:gap-3 transition-all">
+                View Project <i class="fas fa-external-link-alt"></i>
+            </a>
+        </div>
+    </div>
+</div>
+
+
+<!--Demo 12: Perfume-->
+<div class="portfolio-item" data-cat="ecommerce">
+    <div class="bg-white rounded-2xl overflow-hidden shadow-lg card-hover group">
+        <div class="relative overflow-hidden">
+            <img src="https://images.unsplash.com/photo-1541643600914-78b084683601?w=600&h=380&fit=crop"
+                 alt="Perfume Store"
+                 class="w-full h-56 object-cover group-hover:scale-105 transition-transform duration-500">
+
+            <div class="absolute top-4 left-4">
+                <span class="bg-rose-500 text-white px-3 py-1 rounded-full text-xs font-semibold">
+                    E-Commerce
+                </span>
+            </div>
+        </div>
+
+        <div class="p-6">
+            <h3 class="font-bold text-gray-900 text-lg mb-1">
+                Lahore Fragrance House
+            </h3>
+
+            <p class="text-gray-500 text-sm mb-4">
+                Premium fragrance store with men's, women's and unisex collections & online ordering.
+            </p>
+
+            <a href="https://fleura-demo.mywebx.pk/" target="_blank"
+               class="text-emerald-600 font-semibold text-sm inline-flex items-center gap-2 hover:gap-3 transition-all">
+                View Project <i class="fas fa-external-link-alt"></i>
+            </a>
+        </div>
+    </div>
+</div>
+
+
+
+<!--Demo 13 : Sport waers and products-->
+<div class="portfolio-item" data-cat="ecommerce">
+    <div class="bg-white rounded-2xl overflow-hidden shadow-lg card-hover group">
+        <div class="relative overflow-hidden">
+            <img src="https://images.unsplash.com/photo-1461896836934-ffe607ba8211?w=600&h=380&fit=crop"
+                 alt="Sports Store"
+                 class="w-full h-56 object-cover group-hover:scale-105 transition-transform duration-500">
+
+            <div class="absolute top-4 left-4">
+                <span class="bg-orange-500 text-white px-3 py-1 rounded-full text-xs font-semibold">
+                    E-Commerce
+                </span>
+            </div>
+        </div>
+
+        <div class="p-6">
+            <h3 class="font-bold text-gray-900 text-lg mb-1">
+                Lahore Sports Hub
+            </h3>
+
+            <p class="text-gray-500 text-sm mb-4">
+                Sports equipment store for cricket, football, fitness gear and training accessories.
+            </p>
+
+            <a href="https://athlo-demo.mywebx.pk/" target="_blank"
+               class="text-emerald-600 font-semibold text-sm inline-flex items-center gap-2 hover:gap-3 transition-all">
+                View Project <i class="fas fa-external-link-alt"></i>
+            </a>
+        </div>
+    </div>
+</div>
+
+
+<!--demo 14: healthcare -->
+
+<div class="portfolio-item" data-cat="healthcare">
+    <div class="bg-white rounded-2xl overflow-hidden shadow-lg card-hover group">
+        <div class="relative overflow-hidden">
+            <img src="https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?w=600&h=380&fit=crop"
+                 alt="Clinic Website"
+                 class="w-full h-56 object-cover group-hover:scale-105 transition-transform duration-500">
+
+            <div class="absolute top-4 left-4">
+                <span class="bg-red-500 text-white px-3 py-1 rounded-full text-xs font-semibold">
+                    Healthcare
+                </span>
+            </div>
+        </div>
+
+        <div class="p-6">
+            <h3 class="font-bold text-gray-900 text-lg mb-1">
+                Lahore Care Clinic
+            </h3>
+
+            <p class="text-gray-500 text-sm mb-4">
+                Modern clinic website with doctors, departments, appointment booking & patient inquiries.
+            </p>
+
+            <a href="https://vitalflow.framer.website/" target="_blank"
+               class="text-emerald-600 font-semibold text-sm inline-flex items-center gap-2 hover:gap-3 transition-all">
+                View Project <i class="fas fa-external-link-alt"></i>
+            </a>
+        </div>
+    </div>
+</div>
+
+
+<!--demo 15: eduction learning -->
+<div class="portfolio-item" data-cat="education">
+    <div class="bg-white rounded-2xl overflow-hidden shadow-lg card-hover group">
+        <div class="relative overflow-hidden">
+            <img src="https://images.unsplash.com/photo-1524178232363-1fb2b075b655?w=600&h=380&fit=crop"
+                 alt="Education Website"
+                 class="w-full h-56 object-cover group-hover:scale-105 transition-transform duration-500">
+
+            <div class="absolute top-4 left-4">
+                <span class="bg-blue-600 text-white px-3 py-1 rounded-full text-xs font-semibold">
+                    Education
+                </span>
+            </div>
+        </div>
+
+        <div class="p-6">
+            <h3 class="font-bold text-gray-900 text-lg mb-1">
+                Lahore Learning Academy
+            </h3>
+
+            <p class="text-gray-500 text-sm mb-4">
+                Academy website with programs, faculty profiles, admissions information & contact forms.
+            </p>
+
+            <a href="https://eduma.thimpress.com/demo-main/?prev=tf" target="_blank"
+               class="text-emerald-600 font-semibold text-sm inline-flex items-center gap-2 hover:gap-3 transition-all">
+                View Project <i class="fas fa-external-link-alt"></i>
+            </a>
+        </div>
+    </div>
+</div>
+
+
+<!--demo 16: elearning website-->
+<div class="portfolio-item" data-cat="education">
+    <div class="bg-white rounded-2xl overflow-hidden shadow-lg card-hover group">
+        <div class="relative overflow-hidden">
+            <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=600&h=380&fit=crop"
+                 alt="Online Course Platform"
+                 class="w-full h-56 object-cover group-hover:scale-105 transition-transform duration-500">
+
+            <div class="absolute top-4 left-4">
+                <span class="bg-violet-600 text-white px-3 py-1 rounded-full text-xs font-semibold">
+                    Education
+                </span>
+            </div>
+        </div>
+
+        <div class="p-6">
+            <h3 class="font-bold text-gray-900 text-lg mb-1">
+                LearnHub Pakistan
+            </h3>
+
+            <p class="text-gray-500 text-sm mb-4">
+                Course listing platform with categories, instructors, course details, pricing & enrollment.
+            </p>
+
+            <a href="https://eduma.thimpress.com/demo-marketplace/?prev=tf" target="_blank"
+               class="text-emerald-600 font-semibold text-sm inline-flex items-center gap-2 hover:gap-3 transition-all">
+                View Project <i class="fas fa-external-link-alt"></i>
+            </a>
+        </div>
+    </div>
+</div>
+
+<!--demo 17: car rental-->
+<div class="portfolio-item" data-cat="carrental">
+    <div class="bg-white rounded-2xl overflow-hidden shadow-lg card-hover group">
+
+        <div class="relative overflow-hidden">
+            <img 
+                src="https://images.unsplash.com/photo-1549317661-bd32c8ce0db2?w=600&h=380&fit=crop"
+                alt="Car Rental Lahore"
+                class="w-full h-56 object-cover group-hover:scale-105 transition-transform duration-500"
+            >
+
+            <div class="absolute top-4 left-4">
+                <span class="bg-red-500 text-white px-3 py-1 rounded-full text-xs font-semibold">
+                    Car Rental
+                </span>
+            </div>
+        </div>
+
+        <div class="p-6">
+            <h3 class="font-bold text-gray-900 text-lg mb-1">
+                Lahore Car Rentals
+            </h3>
+
+            <p class="text-gray-500 text-sm mb-4">
+                Car rental website with vehicle listings, daily & monthly rental
+                options, booking forms, WhatsApp inquiries and location details.
+            </p>
+
+            <a 
+                href="https://demo.awaikenthemes.com/novaride/home-video/"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="text-red-600 font-semibold text-sm inline-flex items-center gap-2 hover:gap-3 transition-all"
+            >
+                View Project 
+                <i class="fas fa-external-link-alt"></i>
+            </a>
+        </div>
+
+    </div>
+</div>
+
+        <!-- CTA -->
+        <div class="text-center mt-16">
+            <p class="text-gray-500 mb-4">Don't see your industry? We've worked with 20+ niches.</p>
+            <a href="contact.html" class="gradient-bg text-white px-8 py-4 rounded-full font-semibold hover:opacity-90 transition inline-block">
+                <i class="fas fa-comments mr-2"></i>Discuss Your Project
+            </a>
+        </div>
+    </div>
+</section>
+
+<div id="footer-root"></div>
+
+<script src="js/nav.js"></script>
+<script src="js/footer.js"></script>
+<script src="js/main.js"></script>
+<script>
+/* Portfolio filter */
+const filterBtns = document.querySelectorAll('.filter-btn');
+const items = document.querySelectorAll('.portfolio-item');
+
+/* Button styles */
+filterBtns.forEach(btn => {
+    btn.classList.add('bg-gray-100', 'text-gray-700');
+});
+document.querySelector('.filter-btn.active').classList.replace('bg-gray-100','gradient-bg');
+document.querySelector('.filter-btn.active').classList.replace('text-gray-700','text-white');
+
+function filterPortfolio(cat) {
+    /* Reset buttons */
+    filterBtns.forEach(b => {
+        b.classList.remove('gradient-bg','text-white');
+        b.classList.add('bg-gray-100','text-gray-700');
+        b.classList.remove('active');
+    });
+    /* Activate clicked */
+    event.target.classList.add('gradient-bg','text-white','active');
+    event.target.classList.remove('bg-gray-100','text-gray-700');
+
+    items.forEach(item => {
+        if (cat === 'all' || item.dataset.cat === cat) {
+            item.style.display = 'block';
+        } else {
+            item.style.display = 'none';
+        }
+    });
+}
+</script>
+</body>
+</html>
